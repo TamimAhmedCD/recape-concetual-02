@@ -12,7 +12,7 @@
 /* navbar styles started here */
 
 nav{
-    position: fixed;
+
     width: 100%;
     padding: 37px 7%;
     display: flex;
@@ -97,13 +97,137 @@ nav{
 
 /* navbar styles end here */
 
+/* hero section styles started here */
 
-@media screen and (max-width:576px) {
+.hero{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    
+}
+
+.hero-text-container{
+
+    padding-left: 7%;
+    background: url(../resources/Hero\ BG.png);
+
+}
+
+.hero-text h2{
+
+    color: rgb(11, 2, 35);
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.hero-text h1{
+
+    background: linear-gradient(180.00deg, rgb(249, 72, 178),rgb(135, 88, 241));
+    background-clip: text;
+    color: transparent;
+    font-size: 95px;
+    font-weight: 800;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+
+}
+
+.hero-text p{
+
+    color: rgb(83, 76, 100);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+}
+
+.hero-text .fa-circle-play{
+
+    color: rgb(255, 66, 165);
+    margin-right: 20px;
+
+}
+.hero-text .fa-download{
+
+    color: rgb(255, 66, 165);
+    margin-right: 20px;
+
+}
+.hero-text .fa-user-group{
+
+    color: rgb(11, 2, 35);
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+}
+
+.hero-btn-1{
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(255, 66, 165);
+    margin-right: 24px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+
+}
+.hero-btn-2{
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(78, 197, 247);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+
+}
+
+.hero-img{
+
+    padding-right: 7%;
+
+}
+
+.hero-img img{
+
+    width: 550px;
+
+}
+
+/* responsive styles */
+@media screen and (max-width:950px) {
+    /* navbar */
     nav{
         flex-direction: column;
     }
     .nav-list{
         flex-direction: column;
         margin-top: 1.25rem;
+    }
+    /* hero section */
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero-text-container{
+        padding: 0 7%;
+    }
+    .hero-text h2{
+        margin-top: 100px;
+    }
+    .hero-img{
+        padding-right: 0%;
+        padding: 0 7%;
+    }
+    .hero-img img{
+        width: 100%;
     }
 }
