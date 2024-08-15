@@ -35,12 +35,14 @@ button{
 /* navbar styles started here */
 
 nav{
-
+    
+    top: 0;
     width: 100%;
     padding: 37px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
 }
@@ -226,6 +228,8 @@ nav{
 
 }
 
+/* hero section styles ended here */
+
 /* gamer section styles started here */
 
 .gamer{
@@ -241,7 +245,7 @@ nav{
 
 .gamer-img img{
 
-    width: 90vh;
+    width: 90vh
 
 }
 
@@ -284,6 +288,114 @@ nav{
 
 }
 
+/* games section styles started here */
+
+.games{
+
+    margin-top: 120px;
+    padding: 0 7%;
+
+}
+
+.games h1{
+
+    color: rgb(11, 2, 35);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 13px;
+
+}
+
+.games span{
+
+    background: linear-gradient(rgb(249, 72, 178),rgb(135, 88, 241));
+    background-clip: text;
+    color: transparent;
+
+}
+
+.games-text p{
+
+    text-align: center;
+
+}
+
+.games-img-container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+
+}
+
+.games-img{
+
+    width: 100%;
+    position: relative;
+
+}
+
+.games-img img{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.games-img-text{
+
+    position: absolute;
+    margin-top: 24px;
+
+}
+
+.games-img-text p{
+
+    color: rgb(83, 76, 100);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.gamer-img-3{
+
+    position: relative;
+
+}
+
+.hover{
+
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    text-align: center;
+
+}
+
+.hover i{
+
+    font-size: 32px;
+    color: white;
+
+}
+
+.hover p{
+
+    font-size: 20px;
+    color: rgb(255, 66, 165);
+
+}
+
+.img-3:hover{
+
+    filter: brightness(50%);
+
+}
+
+/* gamer section styles ended here */
+
 /* responsive styles */
 @media screen and (max-width:950px) {
     /* navbar */
@@ -320,4 +432,18 @@ nav{
     .gamer-img img{
         width: 100%;
     }
+    /* games section */
+    .games-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .games-img{
+        margin-top: 50px;
+    }
+    .hover{
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        text-align: center;   
+    }
+    
 }
